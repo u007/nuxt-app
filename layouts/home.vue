@@ -3,7 +3,7 @@
 
 <template>
   <a-layout theme="light">
-    <router-view />
+    <NuxtPage />
   </a-layout>
 </template>
 
