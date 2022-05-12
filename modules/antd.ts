@@ -9,9 +9,11 @@ export default defineNuxtModule({
   hooks: {
     "components:dirs" (dirs) {
       dirs.push({
-        path: fileURLToPath(new URL("../node_modules/ant-design-vue/es", import.meta.url)),
-        pattern: "*/index.js",
-        prefix: "a"
+        path: fileURLToPath(
+          new URL('../node_modules/ant-design-vue/lib', import.meta.url)
+        ),
+        pattern: '*/index.js',
+        prefix: 'a',
       })
     }
   }
