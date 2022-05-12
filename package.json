@@ -15,5 +15,9 @@
   },
   "dependencies": {
     "ant-design-vue": "^3.2.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }
