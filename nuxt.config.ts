@@ -2,13 +2,11 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: [
-    "./modules/antd"
-  ],
-  css: [
-    'ant-design-vue/dist/antd.css',
-    '~/assets/css/tailwind.css'
-  ],
+  nitro: {
+    preset: 'vercel',
+  },
+  modules: ['./modules/antd'],
+  css: ['ant-design-vue/dist/antd.css', '~/assets/css/tailwind.css'],
   build: {
     postcss: {
       postcssOptions: {
@@ -19,4 +17,8 @@ export default defineNuxtConfig({
       },
     },
   },
-})
+  experimental: {
+    reactivityTransform: true,
+    viteNode: true,
+  },
+});

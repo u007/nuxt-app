@@ -31,6 +31,10 @@ Build the application for production:
 npm run build
 ```
 
+## deployment to vercel
+
+https://dev.to/mihaiandrei97/nuxt3-app-serverless-api-on-vercel-53dm
+
 Locally preview production build:
 
 ```bash

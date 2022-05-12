@@ -1,10 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .nuxt/dist/server/server.mjs",
+    "lint": "eslint .",
+    "preview": "nuxi preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
