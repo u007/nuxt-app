@@ -1,0 +1,8 @@
+// https://v3.nuxtjs.org/guide/features/server-routes/#server-middleware
+
+const paymentGlobal = defineEventHandler(async (event) => {
+  const { req } = event
+  console.log('pppp', req.url)
+})
+// rawangshops.com
+export default paymentGlobal

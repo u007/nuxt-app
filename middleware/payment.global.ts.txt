@@ -2,19 +2,19 @@
 //   console.log('New request: ' + event.req.url)
 // })
 
-export default defineNuxtRouteMiddleware((to, from) => {
+const paymentGlobal = defineNuxtRouteMiddleware((to, from) => {
   // if (to.params.id === '1') {
   //   console.log('....nooo')
   //   return abortNavigation()
   // }
-
+  console.log('generic middleware')
   if (to.path === '/payment/success') {
-    console.log('direct middleware', to)
+    console.log('redirect to about')
     return navigateTo('/about?orderNo=123')
   }
 
-  console.log('payment middleware', to)
   // return navigateTo('/about')
   // return abortNavigation()
-  return
 })
+// rawangshops.com
+export default paymentGlobal
