@@ -3,5 +3,8 @@ export default defineEventHandler(async (event) => {
   const { req } = event
   const body = await useBody(event)
 
-  console.log('middleware payment: ' + req.url, body)
+  console.log('server payment success: ' + req.url, body)
+  return {
+    ok: 1
+  }
 })
